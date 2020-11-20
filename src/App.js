@@ -1,10 +1,17 @@
-import React from "react"
-export const themeContext=React.createContext()
+import {Header} from "./components/Header/index.js"
+import {Services} from "./components/Services/index.js"
+import {Reviews} from "./components/Reviews/index.js"
+import {Footer} from "./components/Footer/index.js"
+
+
 function App() {
   return (
-    <div className="App bg-black">
-      <p>Hello from here</p>
-    </div>
+    <>
+      <Header />
+      <Services />
+      <Reviews />
+      <Footer />
+    </>
   );
 }
 
