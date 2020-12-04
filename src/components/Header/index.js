@@ -1,6 +1,7 @@
 import React ,{useState} from "react";
 import img from "./pic.svg";
 import burgerMenu from "./menuu.svg";
+import {Theme} from "./ThemeButton/index.js"
 export const Header = () => {
   const [opened,setOpened]=useState(false)
   return (
@@ -48,6 +49,9 @@ export const Header = () => {
             </li>
             <li className=" pr-2 pl-2">
               <a href="#">About us</a>
+            </li>
+            <li className=" pr-2 pl-2">
+              <Theme />
             </li>
           </div>
           <div>
