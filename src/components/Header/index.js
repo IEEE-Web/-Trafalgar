@@ -96,7 +96,7 @@ export const Header = (props) => {
       </nav>
       <div className=" lg:mt-16 mr-16 lg:ml-32 ml-4 grid grid-cols-1 lg:grid-cols-2 items-center">
         <div>
-          <h1 className="font-bold text-4xl lg:text-5xl  lg:w-3/4">
+          <h1 className="font-bold text-3xl lg:text-5xl  lg:w-3/4">
             Virtual healthcare for you
           </h1>
           <p className="mt-4 text-gray-500 lg:w-3/4 ">
