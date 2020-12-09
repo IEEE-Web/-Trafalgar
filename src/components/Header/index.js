@@ -1,13 +1,14 @@
 import React ,{useState} from "react";
 import img from "./pic.svg";
 import burgerMenu from "./menuu.svg";
-import {Theme} from "./ThemeButton/index.js"
-export const Header = () => {
+import {Theme} from "./ThemeButton/index"
+export const Header = (props) => {
+  console.log(props.darkMode)
   const [opened,setOpened]=useState(false)
   return (
-    <header>
+    <header >
       <nav>
-        <div className="lg:mr-16 mr-4 lg:ml-32 ml-4 lg:mt-4 mt-2 flex justify-between items-center">
+        <div className="lg:mr-16 mr-4 lg:ml-32 ml-4 lg:pt-4 pt-2 flex justify-between items-center">
         <h1 className="font-bold">
           <a href="#">
             <svg
@@ -51,12 +52,14 @@ export const Header = () => {
               <a href="#">About us</a>
             </li>
             <li className=" pr-2 pl-2">
-              <Theme />
+              <Theme handleDarkModeTheme={props.handleDarkModeTheme} darkMode={props.darkMode}/>
             </li>
           </div>
           <div>
             <li className="pr-2 pl-2 lg:hidden cursor-pointer">
-              <button onClick={()=>setOpened(!opened)}>
+              <button onClick={()=>{setOpened(!opened)
+              console.log(props)
+              }}>
                 <img src={burgerMenu} alt="" />
               </button>
             </li>
