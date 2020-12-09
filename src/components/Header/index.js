@@ -1,12 +1,13 @@
 import React ,{useState} from "react";
 import img from "./pic.svg";
-import burgerMenu from "./menuu.svg";
+import burgerMenuDark from "./darkmenu.svg";
+import burgerMenuLight from "./lightmenu.svg";
+
 import {Theme} from "./ThemeButton/index"
 export const Header = (props) => {
-  console.log(props.darkMode)
   const [opened,setOpened]=useState(false)
   return (
-    <header >
+    <header className="h-screen lg:h-full" >
       <nav>
         <div className="lg:mr-16 mr-4 lg:ml-32 ml-4 lg:pt-4 pt-2 flex justify-between items-center">
         <h1 className="font-bold">
@@ -58,15 +59,14 @@ export const Header = (props) => {
           <div>
             <li className="pr-2 pl-2 lg:hidden cursor-pointer">
               <button onClick={()=>{setOpened(!opened)
-              console.log(props)
               }}>
-                <img src={burgerMenu} alt="" />
+                <img src={props.darkMode?burgerMenuLight:burgerMenuDark} alt="" />
               </button>
             </li>
           </div>
         </ul>
         </div>
-        <div className={`w-full font-bold pt-2 shadow-xl	 lg:hidden  ${!opened?"invisible":null}`}>
+        <div className={`w-full font-bold pt-4 shadow-xl	 lg:hidden  ${!opened?"invisible":null}`}>
         <ul>
             <li className=" pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
               <a href="#">Home</a>
@@ -88,6 +88,9 @@ export const Header = (props) => {
               <a href="#">About us</a>
             </li>
             <hr />
+            <li className="pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black" onClick={()=>props.handleDarkModeTheme()}>
+              <Theme handleDarkModeTheme={props.handleDarkModeTheme} darkMode={props.darkMode}/>
+            </li>
         </ul>
         </div>
       </nav>
