@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "service_id": 1,
+      "service_icon": "../Images/serviceSvgs/searceDoctor.svg",
+      "service_title": "Search doctor",
+      "service_description": "Choose your doctor from thousands of specialist, general, and trusted hospitals"
+    }, 
+    {
+      "service_id": 2,
+      "service_icon": "../Images/serviceSvgs/onlinePharmacy.svg",
+      "service_title": "Online Pharmacy",
+      "service_description": "Buy  your medicines with our mobile application with a simple delivery system"
+    },
+    {
+      "service_id": 3,
+      "service_icon": "../Images/serviceSvgs/conslution.svg",
+      "service_title": "Conslution",
+      "service_description": "Free consultation with our trusted doctors and get the best recomendations"
+    },
+    {
+      "service_id": 4,
+      "service_icon": "../Images/serviceSvgs/detailsInfo.svg",
+      "service_title": "Details Info",
+      "service_description": "Free consultation with our trusted doctors and get the best recomendations"
+    },
+    {
+      "service_id": 5,
+      "service_icon": "../Images/serviceSvgs/emergancyCare.svg",
+      "service_title": "Emergancy Care",
+      "service_description": "You can get 24/7 urgent care for yourself or your children and your lovly family"
+    },
+    {
+      "service_id": 6,
+      "service_icon": "../Images/serviceSvgs/tracking.svg",
+      "service_title": "Tracking",
+      "service_description": "Track and save your medical history and health data "
+    }
+  ]
+}
