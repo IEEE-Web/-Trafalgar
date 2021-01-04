@@ -1,5 +1,5 @@
 import React from "react";
-import OurServices from './ourServices'
+import {OurServices} from './ourServices'
 
 export const Services =()=>{
     return( //our services section 
@@ -16,7 +16,7 @@ export const Services =()=>{
                 <OurServices/>
                 {/**buttom to learn more about services */}
                 <div className='flex justify-center'>
-                    <button className='border md:px-10 py-2 m-12 rounded-full font-bold border-blue-500 text-blue-500 cursor-pointer tracking-wider hover:bg-blue-500 hover:text-white transition ease-in-out duration-700'>
+                    <button className='focus:outline-none border md:px-10 py-2 m-12 rounded-full font-bold border-blue-500 text-blue-500 cursor-pointer tracking-wider hover:bg-blue-500 hover:text-white transition ease-in-out duration-700'>
                         Learn more
                     </button>
                 </div>
