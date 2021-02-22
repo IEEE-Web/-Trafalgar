@@ -11,7 +11,7 @@ export const Header = (props) => {
       <nav>
         <div className="lg:mr-16 mr-4 lg:ml-32 ml-4 lg:pt-4 pt-2 flex justify-between items-center">
         <h1 className="font-bold">
-          <a href="#">
+          <a href="/">
             <svg
               className="inline-block mr-2"
               width="43"
@@ -38,19 +38,19 @@ export const Header = (props) => {
         <ul className="font-bold lg:flex justify-center items-center">
           <div className="font-bold lg:flex hidden">
             <li className=" pr-2 pl-2">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <li className="pr-2 pl-2">
-              <a href="#">Find a doctor</a>
+              <a href="/">Find a doctor</a>
             </li>
             <li className="pr-2 pl-2">
-              <a href="#">Apps</a>
+              <a href="/">Apps</a>
             </li>
             <li className=" pr-2 pl-2">
-              <a href="#">Testimonials</a>
+              <a href="/">Testimonials</a>
             </li>
             <li className=" pr-2 pl-2">
-              <a href="#">About us</a>
+              <a href="/">About us</a>
             </li>
             <li className=" pr-2 pl-2">
               <Theme handleDarkModeTheme={props.handleDarkModeTheme} darkMode={props.darkMode}/>
@@ -69,23 +69,23 @@ export const Header = (props) => {
         <div className={`w-full font-bold pt-4 shadow-xl	 lg:hidden  ${!opened?"invisible":null}`}>
         <ul>
             <li className=" pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
-              <a href="#">Home</a>
+              <a href="/">Home</a>
             </li>
             <hr />
             <li className="pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
-              <a href="#">Find a doctor</a>
+              <a href="/">Find a doctor</a>
             </li>
             <hr />
             <li className="pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
-              <a href="#">Apps</a>
+              <a href="/">Apps</a>
             </li>
             <hr />
             <li className=" pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
-              <a href="#">Testimonials</a>
+              <a href="/">Testimonials</a>
             </li>
             <hr />
             <li className=" pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black">
-              <a href="#">About us</a>
+              <a href="/">About us</a>
             </li>
             <hr />
             <li className="pr-2 pl-4 cursor-pointer w-full text-gray-500 hover:text-black" onClick={()=>props.handleDarkModeTheme()}>
